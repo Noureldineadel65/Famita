@@ -1,3 +1,4 @@
+let isActive = false;
 $(".slide").slick({
 	// centerMode: true,
 	// centerPadding: "60px",
@@ -55,4 +56,12 @@ $(".slideshow").on("afterChange", function (
 	document
 		.querySelector(`.numbers__item[data-number="${currentSlide}"]`)
 		.classList.add("active");
+});
+document.querySelector(".ham").addEventListener("click", function () {
+	this.classList.toggle("is-active");
+	document.querySelector(".navigation-page").classList.toggle("opened");
+});
+document.querySelector(".search").addEventListener("click", function () {
+	this.querySelector("span").classList.add("transformed");
+	this.querySelector("input").focus();
 });

@@ -1,4 +1,11 @@
 @media only screen and (max-width: 1080px) {
+	.navigation-page {
+		display: block;
+	}
+	.ham {
+		display: block;
+		transform: translateY(0.3rem);
+	}
 	.nav__list {
 		li:not(:first-of-type) {
 			display: none;

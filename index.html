@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Famita.</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="./hamburgers-master/dist/hamburgers.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
@@ -28,6 +29,11 @@
                     <li><a href="#">About</a></li>
                 </ul>
             </li>
+            <button class="hamburger hamburger--collapse ham" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <li class="nav__item">
                 <ul class="navigation-interactions">
                     <li>
@@ -44,6 +50,37 @@
             </li>
         </ul>
     </nav>
+    <div class="navigation-page">
+        <div class="search-input">
+            <div class="search">
+                <span>Search Products</span>
+                <input type="text" name="search" id="search">
+            </div>
+            <i class="fas fa-search"></i>
+        </div>
+        <ul class="navigation-links">
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul class="interactions">
+            <li class="sign">
+                <a href="#">Sign In</a> / <a href="#">Register</a>
+            </li>
+            <li>
+                <ul class="navigation-interactions">
+                    <li><i class="far fa-heart"></i>
+                        <div class="notification">2</div>
+                    </li>
+                    <li><i class="fas fa-shopping-cart"></i>
+                        <div class="notification">5</div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <header class="header">
         <div class="slideshow">
             <img src="./images/bg.jpg" alt="">
