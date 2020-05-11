@@ -60,6 +60,8 @@ $(".slideshow").on("afterChange", function (
 document.querySelector(".ham").addEventListener("click", function () {
 	this.classList.toggle("is-active");
 	document.querySelector(".navigation-page").classList.toggle("opened");
+	document.querySelector("html").classList.toggle("disabled");
+	document.querySelector("body").classList.toggle("disabled");
 });
 document.querySelector(".search").addEventListener("click", function () {
 	this.querySelector("span").classList.add("transformed");
