@@ -61,7 +61,8 @@ $(".slideshow").slick({
 });
 function decideSlick() {
 	if (window.screen.width >= 890) {
-		$(".slide").slick("unslick");
+		$(".slide1").slick("unslick");
+		$(".slide2").slick("unslick");
 	}
 }
 decideSlick();
