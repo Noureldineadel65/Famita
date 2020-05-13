@@ -581,9 +581,9 @@ footer {
 	position: fixed;
 	z-index: 10;
 	margin-top: 7rem;
-	padding: 4rem;
+	padding: 1rem;
 	font-size: 4rem;
-	transform: translateY(-130rem);
+	transform: translateY(-150rem);
 	transition: all 0.5s;
 	display: none;
 	&.opened {
@@ -719,7 +719,7 @@ footer {
 		flex-direction: row !important;
 		justify-content: space-between;
 		width: 100%;
-		margin-top: 10rem;
+		margin-top: 0rem;
 		li {
 			cursor: pointer;
 			position: relative;
