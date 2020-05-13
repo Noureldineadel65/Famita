@@ -1,10 +1,37 @@
 let isActive = false;
-$(".slide").slick({
+$(".slide2").slick({
 	// centerMode: true,
 	// centerPadding: "60px",
 	slidesToShow: 2,
-	prevArrow: $(".left"),
-	nextArrow: $(".right"),
+	prevArrow: $("#left2"),
+	nextArrow: $("#right2"),
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: "unslick",
+		},
+		{
+			breakpoint: 890,
+			settings: "slick",
+		},
+		{
+			breakpoint: 580,
+			settings: {
+				slidesToShow: 1,
+			},
+		},
+		// {
+		// 	breakpoint: 580,
+		// },
+	],
+});
+
+$(".slide1").slick({
+	// centerMode: true,
+	// centerPadding: "60px",
+	slidesToShow: 2,
+	prevArrow: $("#left"),
+	nextArrow: $("#right"),
 	responsive: [
 		{
 			breakpoint: 1200,
